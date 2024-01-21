@@ -1,6 +1,8 @@
 var apm = require('elastic-apm-node').start({
+  // Allowed characters: a-z, A-Z, 0-9, -, _, and space
   serviceName: 'node-app-1',
 
+  // Use if APM Server requires a secret token
   secretToken: '<anything-you-want>', // from Step 6
   serverUrl: 'https://<fleet-server-domain>:8200',
   verifyServerCert: true,
